@@ -1,0 +1,17 @@
+if SHIEL_VFLK
+
+config ZMK_KEYBOARD_NAME
+	default "vflk"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_VFLK_LEFT || SHIELD_VFLK_RIGHT
+
+config ZMK_SPLIT
+	default y
+	
+endif
+
